@@ -467,7 +467,7 @@ X_seq3_padded = pad_sequences(X_seq3, maxlen=length)
 
 prediction = model.predict(X_seq3_padded)
 plabels_1 = []
-pabels_0 = []
+plabels_0 = []
 plabels = []
 for i in prediction:
     if i >= 0.5:
